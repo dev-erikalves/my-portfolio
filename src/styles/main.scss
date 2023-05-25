@@ -11,10 +11,10 @@ body {
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    background-color: #000;
+    background-color: $body-bg-color;
 }
 
 h1 {
-    color: red;
+    color: $gradient;
     font-family: $font-primary;
 }
