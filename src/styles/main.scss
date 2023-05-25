@@ -1,4 +1,4 @@
-@import "./variables";
+@import "./variables.scss";
 @import "./mixins";
 
 * {
@@ -12,9 +12,5 @@ body {
     width: 100%;
     min-height: 100vh;
     background-color: $body-bg-color;
-}
-
-h1 {
-    color: $gradient;
-    font-family: $font-primary;
+    flex-wrap: wrap;
 }

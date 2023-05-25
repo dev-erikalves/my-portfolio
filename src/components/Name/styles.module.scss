@@ -1,0 +1,12 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.name {
+    @include common-measures(2rem 0 4rem 3rem, auto 0, none);
+    @include display-style(flex, row, 100%, auto);
+    @include font-style(5rem, $font-primary, 600, normal);
+    background: $gradient;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

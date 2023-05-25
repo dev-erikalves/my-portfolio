@@ -1,17 +1,14 @@
-import MainContent from "./components/MainContent/MainContent.jsx";
+import Name from "./components/Name/Name.jsx"
 import SideBar from "./components/SideBar/SideBar.jsx";
-
+import MainContent from "./components/MainContent/MainContent.jsx";
 import "./styles/app.scss";
 
-function App() {
-
+export default function App() {
   return (
     <>
-        <h1>Erik Alves</h1>
-        <MainContent />
+        <Name />
         <SideBar />
+        <MainContent />
     </>
   )
 }
-
-export default App

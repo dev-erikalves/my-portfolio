@@ -1,0 +1,27 @@
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/mixins.scss";
+
+.linksContainer {
+    @include display-style(flex, row, 100%, auto);
+    transform: translateY(-3rem);
+    justify-content: center;
+    gap: 1rem;
+}
+.links {
+    @include display-style(flex, row, normal, auto);
+    @include common-measures(.6rem, 1rem 0, .3rem);
+    background: $gradient;
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+.curriculoBtn {
+    @include font-style(1.2rem, $font-primary, 500, $text-color-primary);
+    @include common-measures(1rem 2rem, auto, 1rem);
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+        color: $text-color-secundary;
+    }
+}
