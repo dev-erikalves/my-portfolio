@@ -11,9 +11,9 @@ export default function SideBar() {
             <p className={styles.bio}>FullStack Web Developer</p>
 
             <NetworkBtns
-                  githubUrl="https://github.com"
-                  linkedinUrl="https://linkedin.com"
-                  instagramUrl="https://instagram.com"
+                  githubUrl="https://github.com/dev-erikalves"
+                  linkedinUrl="https://www.linkedin.com/in/dev-erikalves/"
+                  instagramUrl="https://www.instagram.com/developerik.web/"
                   curriculoUrl="#"
             />
             <ContactContainer />

@@ -15,9 +15,13 @@
 }
 
 .icons {
-    filter: brightness(0) invert(1);
     @include common-measures(0, 0 .5rem 0 0, none);
     &:hover {
         transform: scale(1.09);
     }
+}
+.info {
+    @include common-measures(0, 0 0 0 1rem, none);
+    @include font-style(.8em, $font-primary, 500, $text-color);
+    text-decoration: none;
 }
