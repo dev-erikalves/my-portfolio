@@ -7,13 +7,13 @@ export default function LinksContainer(props) {
     return (
         <div className={styles.linksContainer}>
             <Links href={props.githubUrl}>
-                <img className={styles.icons} src={githubIcon} alt="Icon Github" />
+                <img src={githubIcon} alt="Icon Github" />
             </Links>
             <Links href={props.linkedinUrl}>
-                <img className={styles.icons} src={linkedinIcon} alt="Icon Linkedin" />
+                <img src={linkedinIcon} alt="Icon Linkedin" />
             </Links>
             <Links href={props.instagramUrl}>
-                <img className={styles.icons} src={instagramIcon} alt="Icon Instagram" />
+                <img src={instagramIcon} alt="Icon Instagram" />
             </Links>
         </div>
     )

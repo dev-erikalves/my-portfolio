@@ -1,6 +1,7 @@
 import photoPerfil from "../../assets/eu-04.png";
 import LinksContainer from "./components/Links/Links.jsx";
-import { CurriculoBtn }  from "./components/Links/Links.jsx"
+import ContactContainer from "./components/ContactSection/ContactContainer";
+import { CurriculoBtn }  from "./components/Links/Links.jsx";
 import styles from "./styles.module.scss";
 
 export default function SideBar() {
@@ -15,9 +16,7 @@ export default function SideBar() {
                   instagramUrl="https://instagram.com"
                   curriculoUrl="#"
             />
-            <div className={styles.contactContainer}>
-
-            </div>
+            <ContactContainer />
             <CurriculoBtn>Download Cv</CurriculoBtn>
         </section>
     )
