@@ -1,7 +1,7 @@
 import photoPerfil from "../../assets/eu-04.png";
-import LinksContainer from "./components/Links/Links.jsx";
-import ContactContainer from "./components/ContactSection/ContactContainer";
-import { CurriculoBtn }  from "./components/Links/Links.jsx";
+import NetworkBtns from "./components/NetworkBtns/NetworkBtns.jsx";
+import ContactContainer from "./components/ContactContainer/ContactContainer.jsx";
+import { CurriculoBtn }  from "./components/NetworkBtns/NetworkBtns.jsx";
 import styles from "./styles.module.scss";
 
 export default function SideBar() {
@@ -10,7 +10,7 @@ export default function SideBar() {
             <img className={styles.photoPerfil} src={photoPerfil} alt="Foto Perfil de Erik Alves" />
             <p className={styles.bio}>FullStack Web Developer</p>
 
-            <LinksContainer
+            <NetworkBtns
                   githubUrl="https://github.com"
                   linkedinUrl="https://linkedin.com"
                   instagramUrl="https://instagram.com"
