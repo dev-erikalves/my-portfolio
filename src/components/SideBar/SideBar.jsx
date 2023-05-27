@@ -1,7 +1,7 @@
 import photoPerfil from "../../assets/eu-04.png";
 import NetworkBtns from "./components/NetworkBtns/NetworkBtns.jsx";
 import ContactContainer from "./components/ContactContainer/ContactContainer.jsx";
-import { CurriculoBtn }  from "./components/NetworkBtns/NetworkBtns.jsx";
+import { BiggerButton }  from "./components/NetworkBtns/NetworkBtns.jsx";
 import styles from "./styles.module.scss";
 
 export default function SideBar() {
@@ -17,7 +17,9 @@ export default function SideBar() {
                   curriculoUrl="#"
             />
             <ContactContainer />
-            <CurriculoBtn>Download Cv</CurriculoBtn>
+            <BiggerButton 
+                text="Download Cv"
+            />
         </section>
     )
 }

@@ -16,12 +16,12 @@
         transform: scale(1.05);
     }
 }
-.curriculoBtn {
+.BiggerButton {
     @include font-style(1.2rem, $font-primary, 500, $text-color);
     @include common-measures(1rem 2rem, auto, 1rem);
     text-decoration: none;
+    transition: .3s;
     &:hover {
         text-decoration: underline;
-        color: $text-color;
     }
 }

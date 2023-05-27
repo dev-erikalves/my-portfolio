@@ -4,8 +4,9 @@ import JavaScriptIcon from "./icons/javascript-icon.png"
 import SassIcon from "./icons/sass-icon.png"
 import BootstrapIcon from "./icons/bootstrap-icon.png"
 import ReactIcon from "./icons/react-icon.png"
-import GitIcon from "./icons/git-icon.png"
-import GithubIcon from "./icons/github-icon.png"
+import GitIcon from "./icons/git-icon.svg"
+import GithubIcon from "./icons/github-icon.svg"
+import { BiggerButton } from "../SideBar/components/NetworkBtns/NetworkBtns.jsx"
 import styles from "./styles.module.scss"
 
 export default function MainContent() {
@@ -13,8 +14,17 @@ export default function MainContent() {
         <section className={styles.mainContent}>
             <ContentAboutMe />
             <ContentSkills />
-
+            <ContentProjects />
         </section>
+    )
+}
+
+const TitleAndDescription = ({ title, description }) => {
+    return (
+        <>
+            <h1 className={styles.titles}>{title}</h1>
+            <p className={styles.descriptions}>{description}</p>
+        </>
     )
 }
 
@@ -34,7 +44,7 @@ const ContentSkills = () => {
         <section>
             <TitleAndDescription
                 title="Skills"
-                description="Como eu sempre digo, não posso garantir que sei tudo e 100% de todas essas tecnologias, até porque sempre tem algo novo a aprender, mas posso garantir que o que sei não só pode mas vai contribuir com a equipe!"
+                description="Como eu sempre digo, garantir que sei tudo e 100% de todas essas tecnologias é muita ousadia, pois sempre tem algo novo a aprender, e isso não é desculpa, até porque estou constantemente focado e motivado a querer mais! Mas posso garantir que o que sei não só pode mas vai contribuir com a equipe!"
             />
             <div className={styles.skillsContainer}>
                 <Skills img={HtmlIcon} tech="HTML5" />
@@ -59,11 +69,14 @@ const Skills = ({ img, tech }) => {
     )
 }
 
-const TitleAndDescription = ({ title, description }) => {
+const ContentProjects = () => {
     return (
-        <>
-            <h1 className={styles.titles}>{title}</h1>
-            <p className={styles.descriptions}>{description}</p>
-        </>
+        <section>
+            <TitleAndDescription
+                title="Projects"
+                description="Veja um pouco do que andei aprontando nos ultimos dias. Todos os meus repositorios com todos os projetos, para ficar a um passo de saber mais sobre cada um, dê um pulinho na README.md! Te vejo por ai &#x1F918;&#x1F525;."
+            />
+        <a className={styles.projectsBtn} href="https://github.com/dev-erikalves?tab=repositories" target="_blank">Projects</a>
+        </section>
     )
 }

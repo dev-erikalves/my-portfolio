@@ -27,10 +27,10 @@ function Links(props) {
     )
 }
 
-export function CurriculoBtn(props) {
+export function BiggerButton(props) {
     return (
-        <a href="#" className={`${styles.links} ${styles.curriculoBtn}`} target="_blank">
-            {props.children}
+        <a href="#" className={`${styles.links} ${styles.BiggerButton}`} target="_blank">
+            {props.text}
         </a>
     )
 }
