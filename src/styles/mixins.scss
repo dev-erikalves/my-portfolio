@@ -3,11 +3,10 @@
     margin: $margin;
     border-radius: $border-radius;
 }
-@mixin display-style($display, $flex-direction, $width, $height) {
+@mixin display-style($display, $flex-direction, $width) {
     display: $display;
     flex-direction: $flex-direction;
     width: $width;
-    height: $height;
 }
 @mixin font-style($font-size, $font-family, $font-wight, $color) {
     font-size: $font-size;

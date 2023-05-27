@@ -1,1 +1,13 @@
-@import "./variables.scss"
+@import "./variables.scss";
+  
+  .mainAndSidebar {
+    display: flex;
+    margin-top: 5rem;
+    gap: 3rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .mainAndSidebar {
+      display: grid;
+    }
+  }

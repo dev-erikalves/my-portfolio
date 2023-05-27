@@ -2,13 +2,13 @@
 @import "../../../../styles/mixins.scss";
 
 .linksContainer {
-    @include display-style(flex, row, 100%, auto);
+    @include display-style(flex, row, 100%);
     transform: translateY(-3rem);
     justify-content: center;
     gap: 1rem;
 }
 .links {
-    @include display-style(flex, row, normal, auto);
+    @include display-style(flex, row, normal);
     @include common-measures(.6rem, 1rem 0, .3rem);
     background: $gradient;
     

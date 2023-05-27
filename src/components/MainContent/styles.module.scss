@@ -1,3 +1,30 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
 .mainContent {
-    color: #fff;
+    @include display-style(flex, column, 100%);
+    @include common-measures(3rem 2rem, 0, .75rem 0 0 .75rem);
+    background-color: $bg-color;
+}
+.titles {
+    @include font-style(2em, $font-secundary, 600, #fff);
+    border-bottom: 1.3rem;
+    padding: 1rem 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 30%;
+        margin-left: 1rem;
+        border-radius: .08rem;
+        transform: translateY(1rem);
+        height: .3rem;
+        background: $gradient;
+    }
+}
+.description {
+    @include font-style(1em, $font-primary, 500, $text-color);
+    padding-left: 1rem;
+    text-indent: 2rem;
+    text-align: justify;
 }

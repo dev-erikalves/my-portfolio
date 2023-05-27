@@ -7,8 +7,10 @@ export default function App() {
   return (
     <>
         <Name />
-        <SideBar />
-        <MainContent />
+        <div className="mainAndSidebar">
+          <SideBar />
+          <MainContent />
+        </div>
     </>
   )
 }
