@@ -3,25 +3,21 @@
 
 .contactContainer {
     @include display-style(flex, column, 100%);
-    @include common-measures(.8rem, auto, .75rem);
-    align-items: start;
-    gap: 1rem;
-    transform: translateY(-2rem)
+    gap: .5rem;
+    transform: translateY(-4rem)
 }
 .contactSection {
     @include display-style(flex, row, 100%);
-    @include common-measures(.2rem, 0, none);
+    padding: .5rem;
     border-bottom: 1px solid $text-color;
 }
-
 .icons {
-    @include common-measures(0, 0 .5rem 0 0, none);
     &:hover {
         transform: scale(1.09);
     }
 }
 .info {
-    @include common-measures(0, 0 0 0 1rem, none);
     @include font-style(.8em, $font-primary, 500, $text-color);
+    margin-left: .6rem;
     text-decoration: none;
 }

@@ -3,9 +3,9 @@ import linkedinIcon from "./icons/linkedin-icon.svg";
 import instagramIcon from "./icons/instagram-icon.svg"
 import styles from "./styles.module.scss"
 
-export default function LinksContainer(props) {
+export default function NetworkBtns(props) {
     return (
-        <div className={styles.linksContainer}>
+        <div className={styles.networkBtnsContainer}>
             <Links href={props.githubUrl}>
                 <img src={githubIcon} alt="Icon Github" />
             </Links>

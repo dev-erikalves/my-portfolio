@@ -1,15 +1,15 @@
 @import "../../../../styles/variables.scss";
 @import "../../../../styles/mixins.scss";
 
-.linksContainer {
+.networkBtnsContainer {
     @include display-style(flex, row, 100%);
-    transform: translateY(-3rem);
+    transform: translateY(-5.5rem);
     justify-content: center;
     gap: 1rem;
 }
 .links {
-    @include display-style(flex, row, normal);
-    @include common-measures(.6rem, 1rem 0, .3rem);
+    @include common-measures(.6rem, 1rem .5rem, .3rem);
+    display: flex;
     background: $gradient;
     
     &:hover {
