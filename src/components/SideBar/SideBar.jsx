@@ -6,7 +6,9 @@ import styles from "./styles.module.scss";
 
 export default function SideBar() {
     return (
-        <section className={styles.sidebar}>
+        <section className={styles.sidebar}
+        /* lib animation config ->*/ data-aos="flip-left" data-aos-duration="1000"
+        >
             <img className={styles.photoPerfil} src={photoPerfil} alt="Foto Perfil de Erik Alves" />
             <p className={styles.bio}>FullStack Web Developer</p>
 
