@@ -18,5 +18,5 @@ I felt very happy with the results I had doing this project, I know it's nothing
 
  - [ReactJs](https://pt-br.legacy.reactjs.org/)
  - [Sass](https://sass-lang.com/)
- - [Icons Svg](https://icons.getbootstrap.com/)
+ - [Icons Svg](https://icons.getbootstrap.com/) and [png](https://www.flaticon.com/)
 
