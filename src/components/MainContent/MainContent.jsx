@@ -6,7 +6,6 @@ import BootstrapIcon from "./icons/bootstrap-icon.png"
 import ReactIcon from "./icons/react-icon.png"
 import GitIcon from "./icons/git-icon.svg"
 import GithubIcon from "./icons/github-icon.svg"
-import { BiggerButton } from "../SideBar/components/NetworkBtns/NetworkBtns.jsx"
 import styles from "./styles.module.scss"
 
 export default function MainContent() {
