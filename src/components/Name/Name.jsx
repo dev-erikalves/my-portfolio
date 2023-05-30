@@ -9,7 +9,7 @@ export default function Name() {
         deleteSpeed: 90,
     })
     return (
-        <h1 id="name">
+        <h1 id="toTop">
             <span className={styles.name}>{text}</span>
         </h1>
     )
