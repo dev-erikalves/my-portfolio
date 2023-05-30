@@ -36,7 +36,7 @@ const ContentAboutMe = () => {
         <section>
             <TitleAndDescription
                 title="About me"
-                description="Olá, que bom te ver aqui, me chamo Erik Alves, tenho 22 anos, atualmente moro em Floriano-PI, bem, o que dizer sobre mim, sempre fui muito curioso com tudo relacionado a tecnologia, é algo que me fascina e motiva a querer conhecer mais. E cá estou eu, fazendo algo que gosto, desenvolver softwares e soluções para problemas. Iniciei um curso de Tecnologia da Informação na UFERSA no Rio Grande do Norte, mas infelizmente não consigo continuar por questões além do meu controle. Agora estou buscando uma oportunidade nessa área afim de não só melhorar meus conhecimentos e me elevar como profissional, mas contribuir com o máximo que puder para a empresa."
+                description="Olá, que bom te ver aqui, me chamo Erik Alves, tenho 22 anos, atualmente moro em Floriano-PI, bem, o que dizer sobre mim, sempre fui muito curioso com tudo relacionado a tecnologia, é algo que me fascina e motiva a querer conhecer mais. E cá estou eu, fazendo algo que gosto, desenvolver softwares e soluções para problemas. Iniciei um curso de Tecnologia da Informação na UFERSA no Rio Grande do Norte, mas infelizmente não consigo continuar por questões além do meu controle. Agora estou buscando uma oportunidade nessa área afim de não só melhorar meus conhecimentos e me elevar como profissional, mas também contribuir com o máximo que puder para a empresa."
             />
         </section>
     )
@@ -50,28 +50,28 @@ const ContentSkills = () => {
                 description="Como eu sempre digo, garantir que sei tudo e 100% de todas essas tecnologias é muita ousadia, pois sempre tem algo novo a aprender, e isso não é desculpa, até porque estou constantemente focado e motivado a querer mais! Mas posso garantir que o que sei não só pode mas vai contribuir com a equipe!"
             />
             <div className={styles.skillsContainer}>
-                <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
                     <Skills img={HtmlIcon} tech="HTML5" />
                 </div>
-                <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
                     <Skills img={CssIcon} tech="CSS3" />
                 </div>
-                <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
                     <Skills img={JavaScriptIcon} tech="JavaScript" />
                 </div>
-                <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
                     <Skills img={SassIcon} tech="Sass" />
                 </div>
-                <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
                     <Skills img={BootstrapIcon} tech="Bootstrap" />
                 </div>
-                <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
                     <Skills img={ReactIcon} tech="ReactJs" />
                 </div>
-                <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
                     <Skills img={GitIcon} tech="Git" />
                 </div>
-                <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
                     <Skills img={GithubIcon} tech="Github" />
                 </div>
             </div>
@@ -93,7 +93,7 @@ const ContentProjects = () => {
         <section>
             <TitleAndDescription
                 title="Projects"
-                description="Veja um pouco do que andei aprontando nos ultimos dias. Todos os meus repositorios com todos os projetos, para ficar a um passo de saber mais sobre cada um, dê um pulinho na README.md! Te vejo por ai &#x1F918;&#x1F525;."
+                description="Veja um pouco do que andei aprontando nos últimos dias. Todos os meus repositórios com todos os projetos, para ficar a um passo de saber mais sobre cada um, dê um pulinho na README.md! Te vejo por ai &#x1F918;&#x1F525;."
             />
             <a className={styles.projectsBtn} href="https://github.com/dev-erikalves?tab=repositories" target="_blank">Projects</a>
         </section>
