@@ -3,7 +3,7 @@
 
 .name {
     @include common-measures(1rem, 0, none);
-    @include font-style(5em, $font-primary, 600, normal);
+    @include font-style(3em, $font-primary, 600, normal);
     background: $gradient;
     background-clip: border-box;
     -webkit-background-clip: text;

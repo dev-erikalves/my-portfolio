@@ -50,28 +50,28 @@ const ContentSkills = () => {
                 description="Como eu sempre digo, garantir que sei tudo e 100% de todas essas tecnologias é muita ousadia, pois sempre tem algo novo a aprender, e isso não é desculpa, até porque estou constantemente focado e motivado a querer mais! Mas posso garantir que o que sei não só pode mas vai contribuir com a equipe!"
             />
             <div className={styles.skillsContainer}>
-                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down">
                     <Skills img={HtmlIcon} tech="HTML5" />
                 </div>
-                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down">
                     <Skills img={CssIcon} tech="CSS3" />
                 </div>
-                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down">
                     <Skills img={JavaScriptIcon} tech="JavaScript" />
                 </div>
-                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down">
                     <Skills img={SassIcon} tech="Sass" />
                 </div>
-                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down">
                     <Skills img={BootstrapIcon} tech="Bootstrap" />
                 </div>
-                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down">
                     <Skills img={ReactIcon} tech="ReactJs" />
                 </div>
-                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down">
                     <Skills img={GitIcon} tech="Git" />
                 </div>
-                <div data-aos="fade-down" data-aos-anchor-placement="top-center">
+                <div data-aos="fade-down">
                     <Skills img={GithubIcon} tech="Github" />
                 </div>
             </div>
