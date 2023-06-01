@@ -7,70 +7,6 @@
     background-color: $bg-color;
     box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.7);
 }
-.titles {
-    @include font-style(2em, $font-secundary, 600, #fff);
-    border-bottom: 1.3rem;
-    padding: 1rem 0;
-
-    &::after {
-        content: "";
-        position: absolute;
-        width: 28%;
-        margin-left: 1rem;
-        border-radius: .08rem;
-        transform: translateY(1rem);
-        height: .3rem;
-        background: $gradient;
-    }
-}
-.descriptions {
-    @include font-style(1em, $font-primary, 500, $text-color);
-    text-indent: 2rem;
-    text-align: justify;
-}
-//Skills
-.skillsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin: 1rem 0;
-}
-.iconsTech {
-    max-width: 3.5rem;
-    margin-bottom: .5rem;
-}
-.techsContainer {
-    @include common-measures(.8rem, 1.5rem 0 0 0, .5rem);
-    @include display-style(flex, row, 180px);
-    @include font-style(1em, $font-primary, 600, #fff);
-    gap: .7rem;
-    align-items: center;
-    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.678);
-    border: 1px solid transparent;
-    transition: 0.3s;
-    
-    &:hover {
-        transform: scale(1.05);
-        border-image: $gradient;
-        border-image-slice: 1;
-    }
-}
-.projectsBtn {
-    @include font-style(1.2rem, $font-primary, 500, $text-color);
-    @include common-measures(1rem 2rem, 2rem 0 0 0, 1rem);
-    width: 150px;
-    justify-content: center;
-    text-decoration: none;
-    background: $gradient;
-    display: flex;
-    transition: .3s;
-    
-    &:hover {
-        text-decoration: underline;
-        transform: scale(1.05);
-    }
-}
 @media screen and (max-width: 850px) {
     .iconsTech {
         max-width: 2rem;
@@ -81,7 +17,6 @@
 
     }  
 }
-
 @media screen and (max-width: 380px) {
     .mainContent {
         padding: .5rem;
@@ -92,5 +27,11 @@
     .techsContainer {
         max-width: 140px;
         font-size: .8em;
-    }  
+    }
+    .titles {
+        font-size: 1.4em;
+    }
+    .descriptions {
+        font-size: .8em;
+    }
 }

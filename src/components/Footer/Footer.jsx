@@ -6,7 +6,7 @@ export default function Footer() {
         <>
             <footer>
                 <p>Feito com carinho, além de muito &#x2764;</p>
-                <p className={styles.copy}>&copy; All rights reserveds</p>
+                <p className={styles.copy}>&copy; 2023 - All rights reserveds</p>
 
                 <a href="#toTop" className={styles.toTopBtn}>
                     <img src={iconUpToTop} alt="Icon de flecha apontando para cima" />

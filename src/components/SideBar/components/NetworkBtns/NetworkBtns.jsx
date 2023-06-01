@@ -29,7 +29,7 @@ function Links(props) {
 
 export function BiggerButton(props) {
     return (
-        <a href="#" className={`${styles.links} ${styles.BiggerButton}`} target="_blank">
+        <a href="https://drive.google.com/file/d/1EpNgOBFdvLWSpA01Oiqj3QQDmoXBxWYL/view?usp=sharing" className={`${styles.links} ${styles.BiggerButton}`} target="_blank">
             {props.text}
         </a>
     )
