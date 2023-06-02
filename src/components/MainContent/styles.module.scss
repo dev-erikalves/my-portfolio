@@ -7,31 +7,9 @@
     background-color: $bg-color;
     box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.7);
 }
-@media screen and (max-width: 850px) {
-    .iconsTech {
-        max-width: 2rem;
-    }
-    .techsContainer {
-        max-width: 150px;
-        font-size: .9em;
 
-    }  
-}
 @media screen and (max-width: 380px) {
     .mainContent {
         padding: .5rem;
-    }
-    .skillsContainer {
-        gap: .5rem;
-    }
-    .techsContainer {
-        max-width: 140px;
-        font-size: .8em;
-    }
-    .titles {
-        font-size: 1.4em;
-    }
-    .descriptions {
-        font-size: .8em;
     }
 }

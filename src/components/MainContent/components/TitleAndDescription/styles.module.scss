@@ -22,3 +22,11 @@
     text-indent: 2rem;
     text-align: justify;
 }
+@media screen and (max-width: 380px) {
+    .titles {
+        font-size: 1.4em;
+    }
+    .descriptions {
+        font-size: .8em;
+    }
+}

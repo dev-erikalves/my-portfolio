@@ -28,3 +28,21 @@
         border-image-slice: 1;
     }
 }
+@media screen and (max-width: 850px) {
+    .iconsTech {
+        max-width: 2rem;
+    }
+    .techsContainer {
+        max-width: 150px;
+        font-size: .9em;
+    }  
+}
+@media screen and (max-width: 380px) {
+    .skillsContainer {
+        gap: .5rem;
+    }
+    .techsContainer {
+        max-width: 140px;
+        font-size: .8em;
+    }
+}
