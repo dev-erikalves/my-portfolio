@@ -1,18 +1,24 @@
 import Name from './components/Name/Name.jsx'
 import styles from './styles.module.scss'
 
-export default function() {
-    return(
-        <header className={styles.header}>
+export default function Header() {
+    return (
+        <header>
             <Name />
             <nav>
-                <ul>
-                    <li><a href="#sobreMim">Sobre Mim</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contatos">Contatos</a></li>
-                </ul>
+                <LinkNav href="#sobreMim" name="Sobre Mim"/>
+                <LinkNav href="#habilidades" name="Habilidades"/>
+                <LinkNav href="#projetos" name="Projetos"/>
+                <LinkNav href="#contatos" name="Contatos"/>
             </nav>
-        </header>    
+        </header>
+    )
+}
+
+export const LinkNav = ({ href, name }) => {
+    return (
+        <a href={href}>
+            <button className={styles.linksNav}>{name}</button>
+        </a> 
     )
 }
