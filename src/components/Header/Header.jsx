@@ -1,4 +1,4 @@
-import Name from '../Name/Name.jsx'
+import Name from './components/Name/Name.jsx'
 import styles from './styles.module.scss'
 
 export default function() {
