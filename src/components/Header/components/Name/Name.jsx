@@ -9,9 +9,12 @@ export default function Name() {
         deleteSpeed: 90,
     })
     return (
-        <h1 id="toTop">
-            <span className={styles.name}>{text}</span>
-        </h1>
+        <div>
+            <span className={styles.nameContainer}></span>
+            <h1 id="header">
+                <span className={styles.name}>{text}</span>
+            </h1>
+        </div>
     )
 }
 // id="toTop" for btn toTop in footer

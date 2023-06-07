@@ -1,9 +1,13 @@
 @import "../../../../styles/mixins.scss";
 @import "../../../../styles/variables.scss";
 
+.nameContainer {
+   display: flex;
+   flex-direction: row;
+}
 .name {
-    @include common-measures(1rem, 0, none);
-    @include font-style(2.3em, $font-primary, 600, normal);
+    @include common-measures(.1rem, 0, none);
+    @include font-style(1.8em, $font-primary, 600, normal);
     background: $gradient;
     background-clip: border-box;
     -webkit-background-clip: text;
