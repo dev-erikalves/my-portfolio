@@ -6,7 +6,7 @@ export default function Header() {
         <header>
             <Name />
             <nav>
-                <LinkNav href="#sobreMim" name="Sobre Mim"/>
+                <LinkNav href="#sobre" name="Sobre"/>
                 <LinkNav href="#habilidades" name="Habilidades"/>
                 <LinkNav href="#projetos" name="Projetos"/>
                 <LinkNav href="#contatos" name="Contatos"/>
