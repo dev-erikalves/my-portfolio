@@ -11,7 +11,7 @@ import styles from "./styles.module.scss"
 
 export const ContentSkills = () => {
     return (
-        <section>
+        <section id="contentSkills">
             <TitleAndDescription
                 title="Skills"
                 description="Constantemente focado e motivado a querer mais! Como eu sempre digo, garantir que sei tudo e 100% de todas essas tecnologias é muita ousadia, pois sempre tem algo novo a aprender, e com você quero aprender muito! E ai? Bora juntos construir algo incrivel?"
