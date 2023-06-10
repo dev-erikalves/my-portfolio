@@ -1,21 +1,11 @@
 @import "../../../../styles/mixins.scss";
 @import "../../../../styles/variables.scss";
 
-.nameContainer {
-   display: flex;
-   flex-direction: row;
-}
 .name {
-    @include common-measures(.1rem, 0, none);
-    @include font-style(1.8em, $font-primary, 600, normal);
+    @include font-style(1.25em, $font-primary, 600, normal);
+    padding: .01rem;
     background: $gradient;
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-@media screen and (max-width: 568px) {
-    .name {
-        font-size: 13vw;
-    }
 }

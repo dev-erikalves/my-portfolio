@@ -13,6 +13,7 @@
 
     &>a {
         width: 10rem;
+        text-align: center;
         @include common-measures(.4rem, auto, .75rem);
         @include font-style(1em, $font-primary, 500, $text-color);
         background: $gradient;
