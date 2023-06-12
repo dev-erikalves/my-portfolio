@@ -2,14 +2,11 @@
 @import "../../styles/mixins.scss";
 
 .mainContent {
-    @include display-style(flex, column, 100%);
+    @include flex-box(flex, column, center, center);
     @include common-measures(2rem, 0, .75rem);
     background-color: $bg-color;
     box-shadow: $box-shadow;
-}
-
-@media screen and (max-width: 380px) {
-    .mainContent {
+    @media screen and (max-width: 380px){
         padding: .5rem;
     }
 }

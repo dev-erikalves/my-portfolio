@@ -3,9 +3,6 @@
 
 .name {
     @include font-style(1.25em, $font-primary, 600, normal);
+    @include gradient-text($gradient, border-box, text, transparent);
     padding: .01rem;
-    background: $gradient;
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }

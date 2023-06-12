@@ -2,13 +2,11 @@
 @import "../../styles/mixins.scss";
 
 footer {
-    @include display-style(flex, column, 100%);
+    @include flex-box(flex, column, center, center);
     @include font-style(1em, $font-primary, normal, $text-color);
     @include common-measures(1.5rem 0 0, 2rem auto 0, none);
     min-height: 5rem;
     max-width: 1600px;
-    justify-content: center;
-    align-items: center;
     background-color: $bg-color;
     box-shadow: $box-shadow;
     @media screen and (max-width: 430px) {

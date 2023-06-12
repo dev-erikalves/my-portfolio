@@ -2,12 +2,12 @@
 @import "../../../../styles/mixins.scss";
 
 .contactContainer {
-    @include display-style(flex, column, 100%);
+    @include flex-box(flex, column, start, start);
     gap: .5rem;
     transform: translateY(-4rem)
 }
 .contactSection {
-    @include display-style(flex, row, 100%);
+    @include flex-box(flex, row, start, start);
     padding: .5rem;
     border-bottom: 1px solid $text-color;
 }

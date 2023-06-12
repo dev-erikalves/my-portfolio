@@ -4,11 +4,10 @@
 .projectsBtn {
     @include font-style(1.2rem, $font-primary, 500, $text-color);
     @include common-measures(1rem 2rem, 2rem 0 0 0, 1rem);
+    @include flex-box(flex, row, start, center);
     width: 150px;
-    justify-content: center;
     text-decoration: none;
     background: $gradient;
-    display: flex;
     transition: .3s;
     
     &:hover {

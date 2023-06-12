@@ -3,9 +3,7 @@
 
 header {
     @include common-measures(.5rem 2% 0, auto, none);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-box(flex, row, center, space-between);
     max-width: 1600px;
     min-height: 6rem;
     background-color: $bg-color;
@@ -17,12 +15,9 @@ header {
 .linksNav {
     @include font-style(1em, $font-primary, 500, $text-color);
     @include common-measures(.7rem, 0, none);
+    @include gradient-text($gradient, border-box, text, transparent);
     cursor: pointer;
     border: 1px solid transparent;
-    background: $gradient;
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     transition: 500ms;
     &:hover {
         transform: scale(.9);
