@@ -2,12 +2,11 @@
 @import "../../../../styles/mixins.scss";
 
 .networkBtnsContainer {
-    @include flex-box(flex, row, start, center);
-    transform: translateY(-5.5rem);
-    gap: 1rem;
+    @include flex-box(flex, row, center, center);
+    width: 100%;
 }
 .links {
-    @include common-measures(.6rem, 1rem .5rem, .3rem);
+    @include common-measures(.6rem, auto, .3rem);
     display: flex;
     background: $gradient;
     &:hover {
@@ -16,7 +15,7 @@
 }
 .BiggerButton {
     @include font-style(1.2rem, $font-primary, 500, $text-color);
-    @include common-measures(1rem 2rem, auto, 1rem);
+    @include common-measures(1rem 2rem, 2rem auto, 1rem);
     text-decoration: none;
     transition: .3s;
     &:hover {

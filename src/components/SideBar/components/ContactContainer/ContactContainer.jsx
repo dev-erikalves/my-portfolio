@@ -28,18 +28,10 @@ export default function ContactContainer() {
 const ContactSection = ({ href, icon, alt, info }) => {
     return (
         <div className={styles.contactSection}>
-            <Links href={href}>
+            <a href={href} className={styles.icons} target="_blank">
                 <img src={icon} alt={alt} />
-            </Links>
+            </a>
             <span className={styles.info}>{info}</span>
         </div>
-    )
-}
-
-const Links = ({ href, children }) => {
-    return (
-        <a href={href} className={styles.icons} target="_blank" rel="noopener noreferrer">
-            {children}
-        </a>
     )
 }

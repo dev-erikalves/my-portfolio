@@ -4,10 +4,11 @@
 .contactContainer {
     @include flex-box(flex, column, start, start);
     gap: .5rem;
-    transform: translateY(-4rem)
+    margin-top: 1rem;
 }
 .contactSection {
-    @include flex-box(flex, row, start, start);
+    display: flex;
+    width: 100%;
     padding: .5rem;
     border-bottom: 1px solid $text-color;
 }
