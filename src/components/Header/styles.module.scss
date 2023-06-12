@@ -1,17 +1,23 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     min-height: 15vh;
     padding: .5rem 2% 0;
     background-color: $bg-color;
     box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.7);
+    @media screen and (min-width: 1600px) {
+        max-width: 1600px;
+        margin: auto;
+    }
+    @media screen and (max-width: 670px) {
+        flex-direction: column;
+    }
 }
-.linksNav{
+.linksNav {
     @include font-style(1em, $font-primary, 500, $text-color);
     @include common-measures(.7rem, 0, none);
     cursor: pointer;
@@ -21,19 +27,12 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 500ms;
-    &:hover{
+    &:hover {
         transform: scale(.9);
         border-image: $gradient;
         border-image-slice: 1;
     }
-}
-@media screen and (max-width: 670px) {
-    header{
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 380px) {
-    .linksNav{
+    @media screen and (max-width: 380px) {
         font-size: .8em;
         @include common-measures(.5rem, auto, .5rem);
     }
