@@ -1,15 +1,14 @@
 @import "./variables.scss";
-  
-  .mainAndSidebar {
-    display: flex;
-    width: 100%;
-    max-width: 1600px;
-    margin: 5rem auto;
-    gap: 2.5rem;
-  }
+@import "./mixins.scss";
 
+.mainAndSidebar {
+  @include flex-box(flex, row, start, start);
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  margin: 5rem auto;
+  gap: 2.5rem;
   @media screen and (max-width: 800px) {
-    .mainAndSidebar {
-      flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
   }
+}

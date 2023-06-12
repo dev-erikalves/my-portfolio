@@ -4,7 +4,8 @@
 footer {
     @include flex-box(flex, column, center, center);
     @include font-style(1em, $font-primary, normal, $text-color);
-    @include common-measures(1.5rem 0 0, 2rem auto 0, none);
+    @include common-measures(1.5rem 0, auto, none);
+    position: relative;
     min-height: 5rem;
     max-width: 1600px;
     background-color: $bg-color;
