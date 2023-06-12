@@ -5,7 +5,7 @@
     @include display-style(flex, column, 100%);
     @include common-measures(2rem, 0, .75rem);
     background-color: $bg-color;
-    box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.7);
+    box-shadow: $box-shadow;
 }
 
 @media screen and (max-width: 380px) {
