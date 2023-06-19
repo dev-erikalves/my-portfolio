@@ -1,5 +1,5 @@
-@import "../../../../../styles/mixins.scss";
-@import "../../../../../styles/variables.scss";
+@import "@styles/mixins.scss";
+@import "@styles/variables.scss";
 
 .name {
     @include font-style(1.25em, $font-primary, 600, normal);
