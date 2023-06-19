@@ -1,0 +1,46 @@
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+
+.skillsContainer {
+    @include flex-box(flex, row, start, center);
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 2rem auto;
+    @media screen and (max-width: 380px) {
+        gap: .5rem;
+
+    }
+}
+.iconsTech {
+    width: 100%;
+    max-width: 3rem;
+    @media screen and (max-width: 850px) {
+        max-width: 2rem;
+    }
+}
+.techsContainer {
+    @include common-measures(.5rem, 0, .5rem);
+    @include flex-box(flex, row, center, start);
+    @include font-style(1em, $font-primary, 600, #fff);
+    width: 180px;
+    height: 80px;
+    gap: .7rem;
+    box-shadow: $box-shadow;
+    border: 1px solid transparent;
+    
+    &:hover {
+        scale: 1.05;
+        border-image: $gradient;
+        border-image-slice: 1;
+    }
+
+    @media screen and (max-width: 1011px) {
+        width: 150px;
+        font-size: .8em;
+    }
+
+    @media screen and (max-width: 380px) {
+        max-width: 140px;
+    }
+}
