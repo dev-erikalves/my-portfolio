@@ -1,5 +1,5 @@
-@import "../../../../styles/variables.scss";
-@import "../../../../styles/mixins.scss";
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins.scss";
 
 .networkBtnsContainer {
     @include flex-box(flex, row, center, center);
