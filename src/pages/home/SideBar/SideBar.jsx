@@ -1,4 +1,4 @@
-import photoPerfil from "../../../assets/photo-perfil.png";
+import photoPerfil from "@assets/photo-perfil.png";
 import NetworkBtns from "./components/NetworkBtns/NetworkBtns.jsx";
 import ContactContainer from "./components/ContactContainer/ContactContainer.jsx";
 import { BiggerButton } from "./components/NetworkBtns/NetworkBtns.jsx";
