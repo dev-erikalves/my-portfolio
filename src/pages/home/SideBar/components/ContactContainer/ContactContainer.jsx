@@ -1,6 +1,6 @@
-import PhoneIcon from "./icons/telephone-icon.svg";
-import EmailIcon from "./icons/email-icon.svg";
-import LocationIcon from "./icons/location-icon.svg"
+import PhoneIcon from "@assets/telephone-icon.svg";
+import EmailIcon from "@assets/email-icon.svg";
+import LocationIcon from "@assets/location-icon.svg"
 import styles from "./styles.module.scss";
 
 export default function ContactContainer() {
