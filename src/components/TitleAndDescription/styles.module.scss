@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.titles {
+    @include font-style(2em, $font-secundary, 600, #fff);
+    border-bottom: 1.3rem;
+    padding: 1rem 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 28%;
+        margin-left: 1rem;
+        border-radius: .08rem;
+        transform: translateY(1rem);
+        height: .3rem;
+        background: $gradient;
+    }
+}
+.descriptions {
+    @include font-style(1em, $font-primary, 500, $text-color);
+    text-indent: 2rem;
+    text-align: justify;
+}
+@media screen and (max-width: 380px) {
+    .titles {
+        font-size: 1.4em;
+    }
+    .descriptions {
+        font-size: .8em;
+    }
+}
