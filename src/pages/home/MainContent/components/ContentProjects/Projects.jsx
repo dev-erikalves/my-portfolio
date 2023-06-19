@@ -1,4 +1,4 @@
-import { TitleAndDescription } from "../TitleAndDescription/TitleAndDescription.jsx";
+import { TitleAndDescription } from "@components/TitleAndDescription/index.jsx";
 import styles from "./styles.module.scss";
 
 export const ContentProjects = () => {

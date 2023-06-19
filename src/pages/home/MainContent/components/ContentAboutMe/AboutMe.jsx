@@ -1,4 +1,4 @@
-import { TitleAndDescription } from "../TitleAndDescription/TitleAndDescription"
+import { TitleAndDescription } from "@components/TitleAndDescription/index.jsx"
 
 export const ContentAboutMe = () => {
     return (
