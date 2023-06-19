@@ -1,4 +1,4 @@
-import iconUpToTop from "./icon/arrow-up-circle.svg"
+import iconUpToTop from "@assets/arrow-up-circle.svg"
 import styles from "./style.module.scss";
 
 export default function Footer() {
