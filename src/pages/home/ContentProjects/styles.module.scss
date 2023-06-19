@@ -1,0 +1,27 @@
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+
+.contentProjects{
+    @include common-measures(2rem, 4rem auto, .75rem);
+    width: 85%;
+    background-color: $bg-color;
+    box-shadow: $box-shadow;
+    @media screen and (max-width: 980px) {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+.projectsBtn {
+    @include font-style(1.2rem, $font-primary, 500, $text-color);
+    @include common-measures(1rem 2rem, 2rem 0 0 0, 1rem);
+    @include flex-box(flex, row, start, center);
+    width: 150px;
+    text-decoration: none;
+    background: $gradient;
+    transition: .3s;
+    
+    &:hover {
+        text-decoration: underline;
+        transform: scale(1.05);
+    }
+}
