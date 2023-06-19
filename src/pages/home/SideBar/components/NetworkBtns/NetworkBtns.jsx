@@ -1,6 +1,6 @@
-import githubIcon from "./icons/github-icon.svg";
-import linkedinIcon from "./icons/linkedin-icon.svg";
-import instagramIcon from "./icons/instagram-icon.svg"
+import githubIcon from "@assets/github-icon.svg";
+import linkedinIcon from "@assets/linkedin-icon.svg";
+import instagramIcon from "@assets/instagram-icon.svg"
 import styles from "./styles.module.scss"
 
 export default function NetworkBtns(props) {
