@@ -1,14 +1,25 @@
 @import "./variables.scss";
 @import "./mixins.scss";
 
-.mainAndSidebar {
-  @include flex-box(flex, row, start, start);
+.mainContent{
+  @include flex-box(flex, column, start, start);
   width: 100%;
   max-width: 1600px;
-  min-height: 100vh;
-  margin: 5rem auto;
-  gap: 2.5rem;
-  @media screen and (max-width: 800px) {
+  margin: 6rem auto 0;
+}
+.sidebarAboutAndSkills{
+  display: flex;
+  width: 100%;
+  @media screen and (max-width: 840px){
     flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+.aboutAndSkills{
+  @include flex-box(flex, column, stretch, flex-start);
+  @include common-measures(0 .5rem .5rem, 0 1.2rem, .75rem);
+  background-color: rgba(255, 255, 255, 0.15);
+  @media screen and (max-width:568px) {
+    margin: 0;
   }
 }
