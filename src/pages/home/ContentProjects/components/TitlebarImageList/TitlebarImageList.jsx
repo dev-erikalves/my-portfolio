@@ -4,6 +4,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
+import CloseIcon from '@mui/icons-material/Close.js';
 import { Modal } from '@mui/material';
 import { Typography } from '@mui/material';
 import { Box } from '@mui/material';
@@ -83,17 +84,19 @@ function BasicModal({ open, handleClose, modalTitle, modalText, modalTechs, site
             }}
         >
 
-            <Box sx={{ position: 'absolute', bgcolor: '#003249', color: 'white', boxShadow: 24, p: 2, fontFamily: 'Roboto' }}>
+            <Box sx={{ position: 'absolute', backdropFilter: 'blur(15px)', color: '#fff', border: '1px solid', p: 2, fontFamily: 'Roboto', borderRadius: '.5rem' }}>
+
                 <div style={{ display: 'flex', width: '100%', justifyContent: 'flex-end' }}>
-                    <button style={{ border: '1px solid #232323', backgroundColor: 'transparent', padding: '.2rem .8rem', borderRadius: '.75rem', color: 'white' }} onClick={handleClose}>X</button>
+                    <button style={{ border: '2px solid', backgroundColor: 'transparent', padding: '.2rem .6rem', borderRadius: '.5rem', color: 'white' }} onClick={handleClose}><CloseIcon/></button>
                 </div>
-                <Typography id="modal-modal-title" variant="h5" component="h2">
-                    <p style={{ textDecoration: 'underline' }}>{modalTitle}</p>
+                <Typography id="modal-modal-title" variant="h5" sx={{ display: 'flex', justifyContent: 'center', my: 1, fontWeight: 600, color: '#C1ECE4' }}>
+                    {modalTitle}
                 </Typography >
-                <p>{modalTechs}</p>
-                <Typography id="modal-modal-description" sx={{ mt: 2, textAlign: 'justify' }}>
-                    <p>{modalText}</p>
+                    <p style={{ letterSpacing: '1px', fontWeight: 600, color: '#DDE6ED' }}>{modalTechs}</p>
+                <Typography id="modal-modal-description" sx={{ my: 2, textAlign: 'justify', fontWeight: 300, letterSpacing: '1px' }}>
+                    {modalText}
                 </Typography>
+
                 <p>Site: <a href={site} target="_blank" rel="noopener noreferrer">{site}</a></p>
                 <p>Repositório: <a href={repo} target="_blank" rel="noopener noreferrer">{repo}</a></p>
             </Box>
@@ -106,9 +109,9 @@ const itemData = [
         img: 'https://cdn.discordapp.com/attachments/1091425036440711289/1120744786526216202/weatherDay-project.jpeg',
         title: 'WeatherDay',
         author: '@dev-erikalves on Github',
-        modalTitle: "Aplicação do clima, WeatherDay.",
-        modalTechs: "TECNOLOGIAS: ReactJs, Sass(Scss)",
-        modalText: "Simples aplicação que mostra a previsão do tempo, faze-lo foi desafiador, um dos meus primeiros projetos, lidei com várias adversidades, erros e bugs, consegui lidar com todos e buscar soluções praticas e eficientes. Acredito ter agregado bastante, a consumir APIs, tratamentos de erros, etc. Nesse projeto usei a API do OpenWeather.",
+        modalTitle: "APLICAÇÃO DO CLIMA: WeatherDay.",
+        modalTechs: "TECNOLOGIAS: ReactJs, Sass(Scss).",
+        modalText: "Aplicação que mostra a previsão do tempo, faze-lo foi desafiador, um dos meus primeiros projetos, lidei com várias adversidades, erros e bugs, consegui lidar com todos e buscar soluções praticas e eficientes. Acredito ter agregado bastante, a consumir APIs, tratamentos de erros, etc. Nesse projeto usei a API do OpenWeather, além do Vite para a criação da aplicação em sí.",
         site: "https://dev-erikalves.github.io/WeatherDay/",
         repo: "https://github.com/dev-erikalves/WeatherDay",
     },
