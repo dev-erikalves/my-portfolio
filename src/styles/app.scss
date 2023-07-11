@@ -5,14 +5,13 @@
   @include flex-box(flex, column, start, start);
   width: 100%;
   max-width: 1600px;
-  margin: 6rem auto 0;
+  margin: 3rem auto 0;
 }
 .sidebarAboutAndSkills{
   display: flex;
   width: 100%;
   @media screen and (max-width: 840px){
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-direction: column;
   }
 }
 .aboutAndSkills{
