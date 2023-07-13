@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import Name from './components/Name/Name.jsx';
+import Name from '../../../components/Name/Name.jsx';
 import styles from './styles.module.scss';
-import Modal from './components/Modal/Modal.jsx';
 
 export default function Header() {
   const [showHeader, setShowHeader] = useState(true);
@@ -33,14 +32,6 @@ export default function Header() {
             <LinkNav href="#contentAbout" name="Sobre"/>
             <LinkNav href="#contentSkills" name="Habilidades"/>
             <LinkNav href="#contentProjects" name="Projetos"/>
-            <button
-              className={styles.linksNav}
-              data-bs-target="#exampleModalToggle"
-              data-bs-toggle="modal"
-            >
-              Redes
-            </button>
-            <Modal />
           </nav>
         </div>
       </header>
