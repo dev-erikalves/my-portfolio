@@ -1,15 +1,22 @@
-import photoPerfil from "@assets/photo-perfil.png";
+import { useState } from 'react'
+import { BiggerButton } from "./components/NetworkBtns/NetworkBtns.jsx";
 import NetworkBtns from "./components/NetworkBtns/NetworkBtns.jsx";
 import ContactContainer from "./components/ContactContainer/ContactContainer.jsx";
-import { BiggerButton } from "./components/NetworkBtns/NetworkBtns.jsx";
+import photoPerfil from "@assets/photo-perfil.jpg";
+import menuIconSidebar from "@assets/menu-icon.svg"
+import closeIconSidebar from "@assets/x-lg.svg"
 import styles from "./styles.module.scss";
 
 export default function SideBar() {
+    const [isOpen, setIsOpen] = useState(true);
+
     return (
-        <>
-            <aside className={styles.sidebar}
-            /* lib animation config ->*/ data-aos="flip-left" data-aos-duration="1000"
-            >
+        <aside className={isOpen ? styles.sidebarIsOpen : styles.sidebarIsClosed}>
+            <button className={isOpen ? styles.openBtnSidebar : styles.closeBtnSidebar}
+                onClick={() => setIsOpen(!isOpen)}>
+                <img src={isOpen ? closeIconSidebar : menuIconSidebar} />
+            </button>
+            {isOpen && (
                 <div className={styles.sidebarContent}>
                     <img className={styles.photoPerfil} src={photoPerfil} alt="Foto Perfil de Erik Alves" />
                     <p className={styles.bio}>FullStack Web Developer</p>
@@ -21,10 +28,10 @@ export default function SideBar() {
                     />
                     <ContactContainer />
                     <BiggerButton
-                        text="Download Cv"
+                        text="Download CV"
                     />
                 </div>
-            </aside>
-        </>
+            )}
+        </aside>
     )
 }
