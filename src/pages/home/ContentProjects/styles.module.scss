@@ -5,6 +5,7 @@
     @include common-measures(2rem, 4rem auto, .75rem);
     width: 85%;
     background-color: $bg-color;
+    background: url('@assets/bg-desktop.jpg') no-repeat top center/cover;
     box-shadow: $box-shadow;
     @media screen and (max-width: 980px) {
         width: 100%;
