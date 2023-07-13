@@ -2,26 +2,31 @@
 @import '@styles/mixins.scss';
 
 .headerVisible {
-    @include common-measures(.5rem 2% 0, auto, none);
+    @include common-measures(.5rem 1% 0, auto, none);
     @include flex-box(flex, row, center, space-between);
+    position: fixed;
+    width: 100%;
+    min-height: 6rem;
+    z-index: 5;
+    background: url('@assets/bg-desktop.jpg') no-repeat right center/cover;
+    box-shadow: $box-shadow;
+}
+.headerHidden {
+    display: none;
+}
+.contentHeader{
+    @include flex-box(flex, row, center, space-between);
+    z-index: 4;
+    margin: auto;
     width: 100%;
     max-width: 1600px;
-    position: fixed;
-    z-index: 1;
-    min-height: 6rem;
-    background-color: $bg-color;
-    box-shadow: $box-shadow;
     @media screen and (max-width: 670px) {
         flex-direction: column;
     }
 }
 
-.headerHidden {
-    display: none;
-}
-
 .linksNav {
-    @include font-style(1em, $font-primary, 500, $text-color);
+    @include font-style(clamp(.8em, 2.5vw, 1.2em), $font-primary, 500, $text-color);
     @include common-measures(.7rem, 0, none);
     @include gradient-text($gradient, border-box, text, transparent);
     cursor: pointer;
@@ -31,9 +36,5 @@
         transform: scale(.9);
         border-image: $gradient;
         border-image-slice: 1;
-    }
-    @media screen and (max-width: 380px) {
-        font-size: .8em;
-        @include common-measures(.5rem, auto, .5rem);
     }
 }
