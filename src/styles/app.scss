@@ -10,14 +10,21 @@
 .sidebarAboutAndSkills{
   display: flex;
   width: 100%;
+  margin-top: 6rem;
   @media screen and (max-width: 840px){
     flex-direction: column;
   }
 }
 .aboutAndSkills{
   @include flex-box(flex, column, stretch, flex-start);
-  @include common-measures(0 .5rem .5rem, 0 1.2rem, .75rem);
-  background-color: rgba(255, 255, 255, 0.15);
+  @include common-measures(0 .5rem .5rem, 0 auto, .75rem);
+  max-width: 85%;
+  background-color: rgba(34, 28, 28, 0.586);
+  box-shadow: $box-shadow;
+  @media screen and (max-width:840px) {
+    max-width: 100%;
+    margin: .5rem;
+  }
   @media screen and (max-width:568px) {
     margin: 0;
   }
