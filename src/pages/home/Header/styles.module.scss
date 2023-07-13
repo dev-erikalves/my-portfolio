@@ -1,10 +1,13 @@
 @import '@styles/variables.scss';
 @import '@styles/mixins.scss';
 
-header {
+.headerVisible {
     @include common-measures(.5rem 2% 0, auto, none);
     @include flex-box(flex, row, center, space-between);
+    width: 100%;
     max-width: 1600px;
+    position: fixed;
+    z-index: 1;
     min-height: 6rem;
     background-color: $bg-color;
     box-shadow: $box-shadow;
@@ -12,6 +15,11 @@ header {
         flex-direction: column;
     }
 }
+
+.headerHidden {
+    display: none;
+}
+
 .linksNav {
     @include font-style(1em, $font-primary, 500, $text-color);
     @include common-measures(.7rem, 0, none);
