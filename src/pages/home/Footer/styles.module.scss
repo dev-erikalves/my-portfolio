@@ -7,7 +7,7 @@ footer {
     @include common-measures(1.5rem 0, auto, none);
     min-height: 5rem;
     max-width: 1600px;
-    background-color: $bg-color;
+    background: url('@assets/bg-desktop.jpg') no-repeat center center/cover;
     box-shadow: $box-shadow;
     @media screen and (max-width: 430px) {
         font-size: .7em;
