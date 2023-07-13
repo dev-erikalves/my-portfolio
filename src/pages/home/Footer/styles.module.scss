@@ -1,0 +1,26 @@
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+
+footer {
+    @include flex-box(flex, column, center, center);
+    @include font-style(1em, $font-primary, normal, $text-color);
+    @include common-measures(1.5rem 0, auto, none);
+    min-height: 5rem;
+    max-width: 1600px;
+    background-color: $bg-color;
+    box-shadow: $box-shadow;
+    @media screen and (max-width: 430px) {
+        font-size: .7em;
+        align-items: start;
+        padding: .5rem;
+    }
+}
+.btnToTop {
+    position: absolute;
+    right: 2rem;
+    background-color: transparent;
+    border: none;
+}
+.copy {
+    font-size: .8em;
+}
