@@ -12,27 +12,5 @@ body, html {
     width: 100%;
     min-height: 100vh;
     scroll-behavior: smooth;
-    background: linear-gradient(271deg, $bg-color, #0d4b6c, $bg-color, #0d4b6c, $bg-color, #0d4b6c, $bg-color, #0d4b6c);
-    background-size: 1600% 1600%;
-    -webkit-animation: AnimationBody 40s ease infinite;
-    -moz-animation: AnimationBody 40s ease infinite;
-    animation: AnimationBody 130s ease infinite;
-    
-    //safari
-    @-webkit-keyframes AnimationBody {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    //mozilla
-    @-moz-keyframes AnimationBody {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @keyframes AnimationBody {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
+    background: url('@assets/bg-desktop-light.jpg') no-repeat top center/cover;
 }
