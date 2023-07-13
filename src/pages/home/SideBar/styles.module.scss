@@ -1,27 +1,70 @@
 @import "@styles/mixins.scss";
-@import "@styles/variables.scss"; 
+@import "@styles/variables.scss";
 
-.sidebar {
-    @include flex-box(flex, column, center, center);
-    @include common-measures(0 2rem, 0 auto, .75rem);
-    width: 100%;
-    background-color: $bg-color;
+.sidebarIsOpen {
+    @include common-measures(0 1.8rem, 0 1.2rem 0 0, .75rem);
+    position: relative;
     box-shadow: $box-shadow;
-    @media screen and (min-width: 500px) and (max-width: 840px) {
+    background: url('@assets/bg-mobile.jpg') no-repeat top center/cover;
+    @media screen and (max-width: 840px) {
         width: 70%;
+        margin: 0 auto 2rem;
+    }
+    @media screen and (max-width: 500px) {
+        width: 100%;
     }
 }
-.sidebarContent{
-    @include flex-box(flex, column, center, center);
-    gap: 1rem;
-    height: 45rem;
-    transform: translateY(-5rem);
+.sidebarIsClosed {
+    background-color: transparent;
+    position: absolute;
+}
+.sidebarContent {
+    @include flex-box(flex, column, center, flex-start);
+    width: 100%;
+    margin: 0 auto;
+    transform: translateY(-1rem);
+    @media screen and (max-width: 840px) {
+        width: 80%;
+    }
+}
+.openBtnSidebar {
+    @include flex-box(flex, row, stretch, flex-start);
+    position: absolute;
+    padding: .1rem;
+    right: 0;
+    border-radius: 0 .75rem 0 ;
+    border: none;
+    background-color: $bg-color;
+    box-shadow: -1px 1px 4px rgba(255, 255, 255, 0.474);
+    &:hover {
+        transform: scale(1.15);
+        background-image: $gradient;
+        transition: 400ms;
+    }
+}
+.closeBtnSidebar {
+    position: absolute;
+    padding: .2rem 0;
+    z-index: 6;
+    border: none;
+    border-radius: 0 .3rem .3rem 0;
+    background-color: $bg-color;
+    transform: translateY(-2rem);
+    @media screen and (max-width: 670px) {
+        transform: translateY(-2rem);
+    }
+    &:hover {
+        scale: 1.09;
+        background-image: $gradient;
+        transition: 400ms;
+    }
 }
 .photoPerfil {
-    border-radius: .8rem;
-    max-width: 205px;
-    box-shadow: $box-shadow;
+    max-width: 15rem;
+    height: 18rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 .bio {
-    @include font-style(1.1rem, $font-primary, normal, $text-color);
+    @include font-style(clamp(.9rem, 3vw, 1.1rem), $font-primary, normal, $text-color);
 }
