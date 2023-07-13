@@ -1,5 +1,5 @@
 import iconUpToTop from "@assets/arrow-up-circle.svg"
-import styles from "./style.module.scss";
+import styles from "./styles.module.scss";
 
 export default function Footer() {
     const ScrollToTop = () => {
