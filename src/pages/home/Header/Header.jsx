@@ -1,51 +1,49 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Name from './components/Name/Name.jsx';
 import styles from './styles.module.scss';
 import Modal from './components/Modal/Modal.jsx';
 
-const Header = () => {
-  const [show, setShow] = useState(true);
+export default function Header() {
+  const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const controlNavbar = () => {
-    if (typeof window !== 'undefined') {
+  const handleScroll = useCallback(() => {
       if (window.scrollY > lastScrollY) {
-        setShow(false);
+        setShowHeader(false);
       } else {
-        setShow(true);
+        setShowHeader(true);
       }
-
-      setLastScrollY(window.scrollY);
-    }
-  };
+      setLastScrollY(window.scrollY)
+}, [lastScrollY])
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', controlNavbar);
-
+      window.addEventListener('scroll', handleScroll);
       return () => {
-        window.removeEventListener('scroll', controlNavbar);
+        window.removeEventListener('scroll', handleScroll);
       };
     }
   }, [lastScrollY]);
 
   return (
-    <header id='header' className={show ? styles.headerVisible : styles.headerHidden}>
-      <Name />
-      <nav>
-        <LinkNav href="#contentAbout" name="Sobre"/>
-        <LinkNav href="#contentSkills" name="Habilidades"/>
-        <LinkNav href="#contentProjects" name="Projetos"/>
-        <button
-          className={styles.linksNav}
-          data-bs-target="#exampleModalToggle"
-          data-bs-toggle="modal"
-        >
-          Redes
-        </button>
-        <Modal />
-      </nav>
-    </header>
+      <header className={showHeader ? styles.headerVisible : styles.headerHidden}>
+        <div className={styles.contentHeader}>
+          <Name />
+          <nav>
+            <LinkNav href="#contentAbout" name="Sobre"/>
+            <LinkNav href="#contentSkills" name="Habilidades"/>
+            <LinkNav href="#contentProjects" name="Projetos"/>
+            <button
+              className={styles.linksNav}
+              data-bs-target="#exampleModalToggle"
+              data-bs-toggle="modal"
+            >
+              Redes
+            </button>
+            <Modal />
+          </nav>
+        </div>
+      </header>
   );
 };
 export const LinkNav = ({ href, name}) => {
@@ -55,5 +53,3 @@ export const LinkNav = ({ href, name}) => {
     </a>
   );
 };
-
-export default Header;
