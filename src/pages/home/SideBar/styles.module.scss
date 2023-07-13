@@ -29,13 +29,13 @@
 }
 .openBtnSidebar {
     @include flex-box(flex, row, stretch, flex-start);
+    @include common-measures(.1rem, 0, 0 .75rem 0);
     position: absolute;
-    padding: .1rem;
     right: 0;
-    border-radius: 0 .75rem 0 ;
     border: none;
     background-color: $bg-color;
     box-shadow: -1px 1px 4px rgba(255, 255, 255, 0.474);
+    cursor: pointer;
     &:hover {
         transform: scale(1.15);
         background-image: $gradient;
@@ -43,13 +43,13 @@
     }
 }
 .closeBtnSidebar {
+    @include common-measures(.2rem 0, 0, 0 .3rem .3rem 0);
     position: absolute;
-    padding: .2rem 0;
     z-index: 6;
     border: none;
-    border-radius: 0 .3rem .3rem 0;
     background-color: $bg-color;
     transform: translateY(-2rem);
+    cursor: pointer;
     @media screen and (max-width: 670px) {
         transform: translateY(-2rem);
     }
