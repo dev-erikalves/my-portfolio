@@ -1,32 +1,22 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
 
 .titles {
-    @include font-style(2em, $font-secundary, 600, #fff);
+    @include font-style(clamp(1.1em, 2.5vw, 1.5em), $font-secundary, 600, #fff);
+    @include common-measures(.8rem 0, 0, none);
+    @include flex-box(flex, row, center, flex-start);
     border-bottom: 1.3rem;
-    padding: 1rem 0;
-
     &::after {
         content: "";
-        position: absolute;
         width: 20%;
         margin-left: 1rem;
         border-radius: .08rem;
-        transform: translateY(1rem);
         height: .3rem;
         background: $gradient;
     }
 }
 .descriptions {
-    @include font-style(1em, $font-primary, 500, $text-color);
+    @include font-style(clamp(.7em, 2vw, .9em), $font-primary, 500, $text-color);
     text-indent: 2rem;
     text-align: justify;
-}
-@media screen and (max-width: 380px) {
-    .titles {
-        font-size: 1.4em;
-    }
-    .descriptions {
-        font-size: .8em;
-    }
 }
