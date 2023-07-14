@@ -34,7 +34,7 @@ export default function ContentSkills() {
 
 const Skills = ({ img, tech }) => {
     return (
-        <div className={styles.techsContainer} data-aos="fade-down">
+        <div className={styles.techsContainer} data-aos="fade-up">
             <img className={styles.iconsTech} src={img} alt={tech} />
             <span>{tech}</span>
         </div>
