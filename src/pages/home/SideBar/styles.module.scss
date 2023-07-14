@@ -67,4 +67,11 @@
 }
 .bio {
     @include font-style(clamp(.9rem, 3vw, 1.1rem), $font-primary, normal, $text-color);
+    margin-bottom: .8rem;
+}
+
+@media screen and (max-width: 840px) {
+    .openBtnSidebar {
+        display: none;
+    }
 }
