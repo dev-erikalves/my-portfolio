@@ -1,8 +1,19 @@
 @import "@styles/mixins.scss";
 @import "@styles/variables.scss";
 
-.name {
-    @include font-style(1.25em, $font-primary, 600, normal);
-    @include gradient-text($gradient, border-box, text, transparent);
-    padding: .01rem;
+.nameContainer{
+    display: flex;
+    align-items: center;
+    margin-left: .8rem;
+    @media screen and (max-width: 670px) {
+        margin: .5rem 0 0;
+    }
+    &>h1{
+        @include font-style(clamp(1.42em, 3.5vw, 3em), $font-primary, 600, normal);
+        @include gradient-text($gradient, border-box, text, transparent);
+    }
+    &>span{
+        margin-bottom: .2rem;
+        font-size: clamp(1.2em, 3vw, 2em);
+    }
 }
